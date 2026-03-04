@@ -1,0 +1,23 @@
+.container{
+    background-color: dimgray;
+    border: medium solid black;
+    width: 80%;
+    height: 80%;
+    /* Indica que el contenedor va a utilizar CSS Grid */
+    display: grid;
+    /* Ejemplo 3X3 */
+    grid-template-rows: 33% 33% 34%;
+    grid-template-columns: 25% 25% 50%;
+        /* Ejemplo 3X3 */
+    grid-template-rows: 20% 22% 28% 30%;
+    grid-template-columns: 20% 22% 28% 30%;
+
+    grid-template-rows: repeat(5,2fr);
+    grid-template-columns: repeat(5);
+}
+
+.item{
+    font-size: 16px;
+    border-color: gray;
+    border: medium solid white;
+}

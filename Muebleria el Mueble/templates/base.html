@@ -1,0 +1,198 @@
+<!--Base html para el proyecto de Introducción al Frontend:
+Se trata de una App web de una mueblería, usando un sistema de maquetación.
+Se usará como referencia la carpeta de archivos adjuntos con las fotos, ademas del
+pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mueblería el Mueble</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mueblería el Mueble</h1>
+            <span>Tienda <span class="text-blue">Muebles</span></span>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h2>Bienvenido a Mueblería el Mueble</h2>
+            <p>Los mejores muebles para tu hogar</p>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <section class="productos-section">
+            <h2 class="section-title">Nuestros Productos</h2>
+            
+            <div class="productos-fila">
+                <div class="producto-imagen">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto1.jpg" alt="Producto 1">
+                </div>
+                <div class="producto-info">
+                    <div>
+                        <h3>Sillón Premium</h3>
+                        <p>Cómodo sillón de cuero genuino, ideal para tu sala de estar.</p>
+                        <p class="producto-precio">$599.99</p>
+                    </div>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-fila">
+                <div class="producto-imagen">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto2.jpg" alt="Producto 2">
+                </div>
+                <div class="producto-imagen">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto3.jpg" alt="Producto 3">
+                </div>
+            </div>
+
+            <div class="productos-fila">
+                <div class="producto-info">
+                    <div>
+                        <h3>Mesa de Comedor</h3>
+                        <p>Mesa de madera maciza para 6 personas, diseño elegante.</p>
+                        <p class="producto-precio">$799.99</p>
+                    </div>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+                <div class="producto-info">
+                    <div>
+                        <h3>Estantería Moderna</h3>
+                        <p>Estantería de metal y vidrio para organizar tu espacio.</p>
+                        <p class="producto-precio">$449.99</p>
+                    </div>
+                    <button class="btn-agregar">Agregar al carrito</button>
+                </div>
+            </div>
+
+            <div class="productos-fila">
+                <div class="producto-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto4.jpg" alt="Producto 4">
+                    <div class="producto-info">
+                        <div>
+                            <h3>Cama King</h3>
+                            <p>Cama king size con colchón ortopédico incluido.</p>
+                            <p class="producto-precio">$1,299.99</p>
+                        </div>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto5.jpg" alt="Producto 5">
+                    <div class="producto-info">
+                        <div>
+                            <h3>Escritorio Ejecutivo</h3>
+                            <p>Escritorio de oficina con organizador integrado.</p>
+                            <p class="producto-precio">$549.99</p>
+                        </div>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+                <div class="producto-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/producto6.jpg" alt="Producto 6">
+                    <div class="producto-info">
+                        <div>
+                            <h3>Armario Modular</h3>
+                            <p>Armario con compartimentos ajustables y puertas corredizas.</p>
+                            <p class="producto-precio">$899.99</p>
+                        </div>
+                        <button class="btn-agregar">Agregar al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categorias-section">
+            <h2 class="section-title">Categorías de Productos</h2>
+            <div class="categorias-container">
+                <!-- Categoría 1: Oficina -->
+                <div class="categoria-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria1.jpg" alt="Oficina">
+                    <h3>Oficina</h3>
+                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                </div>
+                <!-- Categoría 2: Hogar -->
+                <div class="categoria-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria2.jpg" alt="Hogar">
+                    <h3>Hogar</h3>
+                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                </div>
+                <!-- Categoría 3: Cocina -->
+                <div class="categoria-card">
+                    <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria3.jpg" alt="Cocina">
+                    <h3>Cocina</h3>
+                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <!-- Columna 1: Navegación -->
+            <div class="footer-col">
+                <h3>Navegación</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Cocina</a></li>
+                        <li><a href="#">Oficina</a></li>
+                        <li><a href="#">Jardín</a></li>
+                        <li><a href="#">Cochera</a></li>
+                        <li><a href="#">Dormitorios</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Columna 2: Sobre Nosotros -->
+            <div class="footer-col">
+                <h3>Sobre Nosotros</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Nuestra Historia</a></li>
+                        <li><a href="#">Misión, Visión y Valores</a></li>
+                        <li><a href="#">Carrera</a></li>
+                        <li><a href="#">Políticas de Privacidad</a></li>
+                        <li><a href="#">Términos del Servicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Columna 3: Soporte -->
+            <div class="footer-col">
+                <h3>Soporte</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Ayuda en Línea</a></li>
+                        <li><a href="#">Confianza y Seguridad</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2026 Mueblería el Mueble. Fierro Pariente Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

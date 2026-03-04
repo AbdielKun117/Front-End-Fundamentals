@@ -1,0 +1,54 @@
+/* Estilos generales para que se vea limpio */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* 1. Alinear Logo y Título */
+.header-container {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 20px;           /* Espacio entre imagen y texto */
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 100px;        /* Ajusta el tamaño de tu logo */
+    height: auto;
+}
+
+/* 2. Alinear Imagen de descripción y la Lista (Columnas) */
+.main-content {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.image-side {
+    flex: 1; /* Toma una parte del espacio */
+}
+
+.text-side {
+    flex: 2; /* Toma el doble de espacio que la imagen */
+}
+
+.desc-img {
+    width: 100%; /* La imagen se ajusta al ancho de su columna */
+    border-radius: 8px;
+}
+
+/* 3. Centrar Video y Footer */
+.video-container, footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-icon {
+    width: 40px;
+}

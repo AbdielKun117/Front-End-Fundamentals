@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+header {
+  background-color: #800080; 
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px 5px 0 0;
+}
+.flex-container {
+  display: flex;   
+  gap: 15px;          
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+.card {
+  background-color: #00FFFF; 
+  justify-content: center;
+  padding: 15px;
+  flex: 1; 
+  gap: 5px;           
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.button-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 5px;
+  padding: 0px;
+  margin-top: auto;   
+  color: white;
+}
+.button-row span {
+    flex: 1;
+    background-color: tomato;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+.button-row span:hover{
+    background-color: #800080;
+    color: white;
+
+}
+.button-full {
+  background-color: #800080;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.button-full:hover {
+  background-color: tomato;
+  color: white;
+}
+h2 {
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+p {
+  line-height: 1.2;
+  font-size: 0.9rem;
+}
