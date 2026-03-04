@@ -1,0 +1,57 @@
+<!--hmtl para sitio web de aeronviajes
+✈️ AeroViajes-->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="ejercicio 2.css">
+    <title>Ejercicio flexbox aeroviajes</title>
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>✈️ AeroViajes</h1>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Reservas</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+        <section class="filtros">
+            <div class="filtro-group">
+                <label for="origen">Origen:</label>
+                <select id="origen">
+                    <option value="madrid">Madrid</option>
+                    </select>
+            </div>
+
+            <div class="filtro-group">
+                <label for="destino">Destino:</label>
+                <select id="destino">
+                    <option value="paris">París</option>
+                    </select>
+            </div>
+
+            <div class="filtro-group">
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+            </div>
+
+            <button class="btn-buscar">Buscar vuelos</button>
+        </section>
+        <section class="flex-container">
+            <article class="card">
+            <h2>Vuelo 1</h2>
+            </article>
+
+            <article class="card">
+            <h2>Vuelo 2</h2>
+            </article>
+
+            <article class="card">
+                <h2>Vuelo 3</h2>
+            </article>
+        </section>
+        <footer>
+            <p>&copy; 2026 AeroViajes. Todos los derechos reservados.</p>
+        </footer>
+    </div>
