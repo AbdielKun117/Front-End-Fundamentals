@@ -13,6 +13,8 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap.min.css">
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
@@ -23,15 +25,22 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
         </div>
     </header>
 
-    <nav class="navbar">
-        <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
-            <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
-            <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-            <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto w-100 justify-content-around">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <div class="hero-section">
@@ -151,7 +160,7 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-content">
+        <div class="container-xl footer-content">
             <!-- Columna 1: Navegación -->
             <div class="footer-col">
                 <h3>Navegación</h3>
@@ -194,5 +203,7 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
         <p>&copy; 2026 Mueblería el Mueble. Fierro Pariente Todos los derechos reservados.</p>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap.bundle.min.js"></script>
 </body>
 </html>
