@@ -1,15 +1,11 @@
-/* ============================================
-   REDEFINICIÓN DE VARIABLES BOOTSTRAP
-   ============================================ */
+﻿
 
 :root {
     --bs-blue: #037BC0;
     --bs-green: #8cbc00;
 }
 
-/* ============================================
-   ESTILOS GENERALES
-   ============================================ */
+
 
 html {
     font-size: 62.5%;
@@ -22,9 +18,7 @@ body {
     color: #333;
 }
 
-/* ============================================
-   TÍTULOS
-   ============================================ */
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -41,9 +35,7 @@ h3 {
     font-size: 4rem;
 }
 
-/* ============================================
-   HEADER
-   ============================================ */
+
 
 header {
     background-color: #f8f9fa;
@@ -70,9 +62,7 @@ header span {
     color: var(--bs-blue);
 }
 
-/* ============================================
-   NAVEGACIÓN CON BOOTSTRAP
-   ============================================ */
+
 
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -94,9 +84,15 @@ header span {
     color: var(--bs-blue) !important;
 }
 
-/* ============================================
-   SECCIÓN HERO
-   ============================================ */
+.navbar-collapse {
+    transition: height 0.35s ease;
+}
+
+.navbar-collapse.collapsing {
+    transition: height 0.35s ease;
+}
+
+
 
 .hero-section {
     background-image: url('../Archivos Adjuntos Proyecto Final Frontend Fundamentals/principal.jpg');
@@ -119,9 +115,7 @@ header span {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* ============================================
-   CONTENIDO PRINCIPAL
-   ============================================ */
+
 
 .main-content {
     max-width: 1200px;
@@ -134,9 +128,7 @@ header span {
     margin-bottom: 3rem;
 }
 
-/* ============================================
-   SECCIÓN DE PRODUCTOS
-   ============================================ */
+
 
 .productos-section {
     padding: 2rem 0;
@@ -224,9 +216,7 @@ header span {
     display: block;
 }
 
-/* ============================================
-   SECCIÓN DE CATEGORÍAS
-   ============================================ */
+
 
 .categorias-section {
     padding: 2rem 0;
@@ -275,9 +265,7 @@ header span {
     text-decoration: none;
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+
 
 footer {
     background-color: #1a1a1a;
@@ -343,9 +331,7 @@ footer p {
     font-size: 1.3rem;
 }
 
-/* ============================================
-   MEDIA QUERIES - TABLET (768px)
-   ============================================ */
+
 
 @media (max-width: 768px) {
     html {
@@ -364,12 +350,12 @@ footer p {
         font-size: 2rem;
     }
 
-    /* Hero más alto en tablet */
+    
     .hero-section {
         height: 55rem;
     }
 
-    /* Productos: una columna */
+    
     .productos-fila {
         flex-direction: column;
         gap: 1rem;
@@ -386,7 +372,7 @@ footer p {
         height: 250px;
     }
 
-    /* Categorías: 2 columnas */
+    
     .categorias-container {
         gap: 1.5rem;
     }
@@ -396,7 +382,7 @@ footer p {
         max-width: 250px;
     }
 
-    /* Footer responsive */
+    
     .footer-content {
         flex-direction: column;
         gap: 2rem;
@@ -413,9 +399,30 @@ footer p {
     }
 }
 
-/* ============================================
-   MEDIA QUERIES - MÓVIL (480px)
-   ============================================ */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        margin-top: 1rem;
+        border-top: 1px solid #e9ecef;
+        padding-top: 0.75rem;
+    }
+
+    .navbar-nav {
+        gap: 0.4rem;
+    }
+
+    .navbar .nav-link {
+        display: block;
+        padding: 0.9rem 1rem;
+        border-radius: 0.5rem;
+    }
+
+    .navbar .nav-link:hover,
+    .navbar .nav-link:focus {
+        background-color: rgba(3, 123, 192, 0.1);
+    }
+}
+
+
 
 @media (max-width: 480px) {
     html {
@@ -655,14 +662,14 @@ header span {
     margin-bottom: 0.5rem;
 }
 
-/* El precio resaltado */
+
 .producto-precio {
     font-size: 1.8rem;
     font-weight: bold;
     margin: 1rem 0;
 }
 
-/* El botón de agregar al carrito */
+
 .btn-agregar {
     align-self: flex-start;
     background-color: white;
@@ -880,3 +887,4 @@ footer p {
         flex: 1 1 100%;
     }
 }
+

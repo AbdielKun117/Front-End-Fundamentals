@@ -1,26 +1,22 @@
-<!--Base html para el proyecto de Introducción al Frontend:
-Se trata de una App web de una mueblería, usando un sistema de maquetación.
-Se usará como referencia la carpeta de archivos adjuntos con las fotos, ademas del
-pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf.
--->
+﻿
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mueblería el Mueble</title>
-    <!-- Google Fonts -->
+    <title>Muebleria el Mueble</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+    
     <link rel="stylesheet" href="../bootstrap.min.css">
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>Mueblería el Mueble</h1>
+            <h1>Muebleria el Mueble</h1>
             <span>Tienda <span class="text-blue">Muebles</span></span>
         </div>
     </header>
@@ -36,7 +32,7 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
                     <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#tienda">Tienda</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
                 </ul>
             </div>
@@ -45,7 +41,7 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
 
     <div class="hero-section">
         <div class="hero-content">
-            <h2>Bienvenido a Mueblería el Mueble</h2>
+            <h2>Bienvenido a Muebleria el Mueble</h2>
             <p>Los mejores muebles para tu hogar</p>
         </div>
     </div>
@@ -60,8 +56,8 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
                 </div>
                 <div class="producto-info">
                     <div>
-                        <h3>Sillón Premium</h3>
-                        <p>Cómodo sillón de cuero genuino, ideal para tu sala de estar.</p>
+                        <h3>Sillon Premium</h3>
+                        <p>Comodo sillon de cuero genuino, ideal para tu sala de estar.</p>
                         <p class="producto-precio">$599.99</p>
                     </div>
                     <button class="btn-agregar">Agregar al carrito</button>
@@ -81,15 +77,15 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
                 <div class="producto-info">
                     <div>
                         <h3>Mesa de Comedor</h3>
-                        <p>Mesa de madera maciza para 6 personas, diseño elegante.</p>
+                        <p>Mesa de madera maciza para 6 personas, diseno elegante.</p>
                         <p class="producto-precio">$799.99</p>
                     </div>
                     <button class="btn-agregar">Agregar al carrito</button>
                 </div>
                 <div class="producto-info">
                     <div>
-                        <h3>Estantería Moderna</h3>
-                        <p>Estantería de metal y vidrio para organizar tu espacio.</p>
+                        <h3>Estanteria Moderna</h3>
+                        <p>Estanteria de metal y vidrio para organizar tu espacio.</p>
                         <p class="producto-precio">$449.99</p>
                     </div>
                     <button class="btn-agregar">Agregar al carrito</button>
@@ -102,7 +98,7 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
                     <div class="producto-info">
                         <div>
                             <h3>Cama King</h3>
-                            <p>Cama king size con colchón ortopédico incluido.</p>
+                            <p>Cama king size con colchon ortopedico incluido.</p>
                             <p class="producto-precio">$1,299.99</p>
                         </div>
                         <button class="btn-agregar">Agregar al carrito</button>
@@ -134,76 +130,96 @@ pdf con la descripcion del proyecto, y usar los .js .css y .html que dice el pdf
         </section>
 
         <section class="categorias-section">
-            <h2 class="section-title">Categorías de Productos</h2>
+            <h2 class="section-title">Categorias de Productos</h2>
             <div class="categorias-container">
-                <!-- Categoría 1: Oficina -->
-                <div class="categoria-card">
+                
+                <div class="categoria-card overflow-hidden">
                     <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria1.jpg" alt="Oficina">
                     <h3>Oficina</h3>
-                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                    <a href="#" class="btn-categoria">Ver Categoria</a>
                 </div>
-                <!-- Categoría 2: Hogar -->
-                <div class="categoria-card">
+                
+                <div class="categoria-card overflow-hidden">
                     <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria2.jpg" alt="Hogar">
                     <h3>Hogar</h3>
-                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                    <a href="#" class="btn-categoria">Ver Categoria</a>
                 </div>
-                <!-- Categoría 3: Cocina -->
-                <div class="categoria-card">
+                
+                <div class="categoria-card overflow-hidden">
                     <img src="../Archivos Adjuntos Proyecto Final Frontend Fundamentals/categoria3.jpg" alt="Cocina">
                     <h3>Cocina</h3>
-                    <a href="#" class="btn-categoria">Ver Categoría</a>
+                    <a href="#" class="btn-categoria">Ver Categoria</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    
     <footer>
         <div class="container-xl footer-content">
-            <!-- Columna 1: Navegación -->
+            
             <div class="footer-col">
-                <h3>Navegación</h3>
+                <h3>Navegacion</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Cocina</a></li>
                         <li><a href="#">Oficina</a></li>
-                        <li><a href="#">Jardín</a></li>
+                        <li><a href="#">Jardin</a></li>
                         <li><a href="#">Cochera</a></li>
                         <li><a href="#">Dormitorios</a></li>
                     </ul>
                 </nav>
             </div>
-            <!-- Columna 2: Sobre Nosotros -->
+            
             <div class="footer-col">
                 <h3>Sobre Nosotros</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Nuestra Historia</a></li>
-                        <li><a href="#">Misión, Visión y Valores</a></li>
+                        <li><a href="#">Mision, Vision y Valores</a></li>
                         <li><a href="#">Carrera</a></li>
-                        <li><a href="#">Políticas de Privacidad</a></li>
-                        <li><a href="#">Términos del Servicio</a></li>
+                        <li><a href="#">Politicas de Privacidad</a></li>
+                        <li><a href="#">Terminos del Servicio</a></li>
                     </ul>
                 </nav>
             </div>
-            <!-- Columna 3: Soporte -->
+            
             <div class="footer-col">
                 <h3>Soporte</h3>
                 <nav>
                     <ul>
                         <li><a href="#">Preguntas Frecuentes</a></li>
-                        <li><a href="#">Ayuda en Línea</a></li>
+                        <li><a href="#">Ayuda en Linea</a></li>
                         <li><a href="#">Confianza y Seguridad</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
         <hr>
-        <p>&copy; 2026 Mueblería el Mueble. Fierro Pariente Todos los derechos reservados.</p>
+        <p>&copy; 2026 Muebleria el Mueble. Fierro Pariente Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
+    
     <script src="../bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var navCollapseEl = document.getElementById('navbarNav');
+            var navLinks = document.querySelectorAll('#navbarNav .nav-link');
+
+            if (!navCollapseEl || !window.bootstrap) {
+                return;
+            }
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function () {
+                    if (window.innerWidth < 992 && navCollapseEl.classList.contains('show')) {
+                        var bsCollapse = bootstrap.Collapse.getOrCreateInstance(navCollapseEl);
+                        bsCollapse.hide();
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
